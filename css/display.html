@@ -7,25 +7,42 @@
     <title>Display Types</title>
     
     <style>
-        div {
+        body {
+            background-color: bisque;
+        }
+
+        #box {
+            width: 200px;
+            height: 200px;
+            border: 2px solid red;
+            background-image: url(images/bg3.jpg);
+            background-position: center center;
+            background-size: cover;
+            border-radius: 50% 50% 50% 50%;
+            box-shadow: 6px 6px 5px black;
+        }
+        /* div {
             display: inline-block;
             border: 1px solid red;
             width: 200px;
             height: 200px;
+            position: static;
         }
         div.half-width {
             width: 50%;
+            height: 50%;
             border: 1px solid red;
-            display: block;
+            display: block; */
         }
     </style>
 </head>
 <body>
-    <div class="half-width">
+    <!-- <div class="half-width">
         This is a block Element
     </div>
     <div>
         This is a block Element
-    </div>
+    </div> -->
+    <div id="box"></div>
 </body>
 </html>
