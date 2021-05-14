@@ -17,5 +17,7 @@ div {
 
 /* borders around borders  */
 .outline {
-    
+    outline: 5px solid yellow;
+    outline-offset: 10px;
+    margin: 30px;
 }
