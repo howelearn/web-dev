@@ -1,0 +1,24 @@
+/* add background color to the top nav */
+.topnav {
+    background-color: black;
+    overflow: hidden;
+}
+
+.topnav {
+    float: left;
+    color: darkgoldenrod;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: tomato;
+    color: black;
+}
+
+.topnav a:active {
+    background-color: salmon;
+    color: antiquewhite;
+}
