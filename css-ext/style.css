@@ -1,0 +1,19 @@
+body {
+    background: url(../images/bg3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#box {
+    display:block;
+    width: 50rem;
+    height: 50rem;
+    background-color: rgba(rgb(0,21,26) 0.5);
+    margin: 5rem auto;
+    color: tomato;
+    text-align: justify;
+    padding: 5rem;
+
+}
