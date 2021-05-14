@@ -1,24 +1,47 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+}
 /* add background color to the top nav */
 .topnav {
-    background-color: black;
-    overflow: hidden;
+    border: 1px solid white;
+    border-bottom: 2px solid lightgray;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
-.topnav {
+.topnavhome {
     float: left;
     color: darkgoldenrod;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    
 }
 
-.topnav a:hover {
+.topnavrest {
+    background-color: coral;
+    overflow: hidden;
+    border: 20%;
+    display: inline-block;
+    min-width: 20%;
+    max-width: 20%;
+    box-sizing: border-box;
+    float: right;
+}
+
+.topnavhome, .topnavrest, a:hover {
     background-color: tomato;
-    color: black;
+    color: antiquewhite;
+    text-decoration-color: blanchedalmond;
 }
 
-.topnav a:active {
-    background-color: salmon;
+.topnavhome, .topnavrest, a:active {
+    background-color:brown;
     color: antiquewhite;
+    text-decoration-color: brown;
 }
