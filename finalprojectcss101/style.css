@@ -11,15 +11,18 @@ body {
     top: 0;
     left: 0;
     width: 100%;
+    margin: auto;
 }
 
 .topnavhome {
+    background-color: coral;
+    overflow: hidden;
+    border: 20%;
+    display: inline-block;
+    min-width: 20%;
+    max-width: 20%;
+    box-sizing: border-box;
     float: left;
-    color: darkgoldenrod;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
     
 }
 
