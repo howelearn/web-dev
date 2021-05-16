@@ -1,50 +1,50 @@
-body {
-    font-family: 'Courier New', Courier, monospace;
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+/* font-family: 'Source Sans Pro', sans-serif; */
+
+* {
     padding: 0;
-}
-/* add background color to the top nav */
-.topnav {
-    border: 1px solid white;
-    border-bottom: 2px solid lightgray;
-    padding: 20px;
-    top: 0;
-    left: 0;
-    width: 100%;
-    margin: auto;
+    margin: 0;
 }
 
-.topnavhome {
-    background-color: coral;
-    overflow: hidden;
-    border: 20%;
-    display: inline-block;
-    min-width: 20%;
-    max-width: 20%;
+body {
     box-sizing: border-box;
-    float: left;
+    background: rgb(255,245,235);
+    background: linear-gradient(90deg, rgba(255,245,235,1) 0%, rgba(255,255,246,1) 73%, rgba(255,255,255,0.2805497198879552) 100%);
+}
+
+#container {
     
 }
 
-.topnavrest {
-    background-color: coral;
-    overflow: hidden;
-    border: 20%;
+.navigation home {
+    flex-basis: 20%;
+}
+
+.navigation {
+    background-color: dodgerblue;
+    border: 1px solid red;
+    height: 50px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation a {
+    color: #fffff6;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    color: dodgerblue;
+    background-color: #fffff6;
+    padding: 5px 15px;
+}
+
+a {
+    background-color: dodgerblue;
     display: inline-block;
-    min-width: 20%;
-    max-width: 20%;
-    box-sizing: border-box;
-    float: right;
-}
-
-.topnavhome, .topnavrest, a:hover {
-    background-color: tomato;
-    color: antiquewhite;
-    text-decoration-color: blanchedalmond;
-}
-
-.topnavhome, .topnavrest, a:active {
-    background-color:brown;
-    color: antiquewhite;
-    text-decoration-color: brown;
-}
+    padding: 5px 15px;
+    color: black;
+    text-decoration:  none;
+    transition: background-color 0.2s,
+                color 0.5;
