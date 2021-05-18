@@ -16,7 +16,6 @@ nav {
     background-color: #000;
     color: #fff;
     justify-content: space-around;
-    /* padding: 20px 0; */
     height: 75px;
     align-items: center;
 }
@@ -49,7 +48,7 @@ nav ul li a:hover {
 
 /* TOGGLE MENU */
 .menu-toggle {
-    display: flex;
+    display: none;
     flex-direction: column;
     height: 20px;
     justify-content: space-between;
