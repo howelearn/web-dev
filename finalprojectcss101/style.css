@@ -132,3 +132,28 @@ nav ul li a:hover {
         transform: translateX(0);
     }
 }
+
+#layout {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#nav {
+    flex-basis: 20%;
+    border-bottom: 1px solid tomato;
+    padding: 20px;
+}
+
+#sidebar {
+    flex-basis: 20%;
+    border-right: 1px solid tomato;
+    padding: 20px;
+    border-bottom: 1px solid tomato;
+
+}
+
+#content {
+    flex-basis: 80%;
+    padding: 20px;
+    border-bottom: 1px solid tomato;
+}
