@@ -1,9 +1,10 @@
 * {
-    padding: 0;
-    margin: 0;
+    box-sizing: border-box;
 }
 
 body {
+    padding: 0;
+    margin: 0;
     font-family: sans-serif;
     background: rgb(241,241,241);
     background: radial-gradient(circle, rgba(241,241,241,0.8) 0%, rgba(255,254,199,0.8015581232492998) 100%);
@@ -44,6 +45,24 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #fff;
     color: #000;
+}
+
+/* SIDEBAR + CONTENT */
+#layout {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#sidebar {
+    flex-basis: 20%;
+    border-right: 1px solid tomato;
+    padding: 20px;
+}
+
+#content {
+    flex-basis: 80%;
+    padding: 20px;
+    border-bottom: 1px solid tomato;
 }
 
 /* TOGGLE MENU */
@@ -133,27 +152,3 @@ nav ul li a:hover {
     }
 }
 
-#layout {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#nav {
-    flex-basis: 20%;
-    border-bottom: 1px solid tomato;
-    padding: 20px;
-}
-
-#sidebar {
-    flex-basis: 20%;
-    border-right: 1px solid tomato;
-    padding: 20px;
-    border-bottom: 1px solid tomato;
-
-}
-
-#content {
-    flex-basis: 80%;
-    padding: 20px;
-    border-bottom: 1px solid tomato;
-}
