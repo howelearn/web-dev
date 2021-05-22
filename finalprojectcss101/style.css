@@ -53,17 +53,18 @@ nav ul li a:hover {
     flex-wrap: wrap;
 }
 
+#content {
+    flex-basis: 80%;
+    padding: 20px;
+    border-bottom: 1px solid tomato;
+}
+
 #sidebar {
     flex-basis: 20%;
     border-right: 1px solid tomato;
     padding: 20px;
 }
 
-#content {
-    flex-basis: 80%;
-    padding: 20px;
-    border-bottom: 1px solid tomato;
-}
 
 /* TOGGLE MENU */
 .menu-toggle {
@@ -121,9 +122,10 @@ nav ul li a:hover {
 
 /* UKURAN TABLET */
 @media screen and (max-width: 768px) {
-    nav ul {
+    #sidebar, #content nav ul {
         width: 50%;
-    }    
+    }
+
 }
 
 /* UKURAN MOBILE */
@@ -150,5 +152,10 @@ nav ul li a:hover {
         opacity: 1;
         transform: translateX(0);
     }
+    #sidebar, #content {
+        flex-basis: 100%;
+        border-right: 0;
+    }
+    
 }
 
