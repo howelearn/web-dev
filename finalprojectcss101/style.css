@@ -65,12 +65,34 @@ aside {
     padding: 20px;
 }
 
-footer {
-    display: flex;
-    flex-grow: 1fr 1fr 1fr;
-    justify-content: space-around;
-    border-top: 1px solid tomato;
+
+/* FOOTER */
+footer div h6 ul li p a {
+    text-decoration: none;
+    list-style: none;
 }
+
+footer {
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    flex-basis: 100%;
+    flex-basis: 1fr 1fr 1fr;
+    justify-content: space-around;
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    text-align: left;
+    list-style: none;
+    padding-left: 5em;
+    padding-right: 5em;
+    
+}
+
+footer h6 {
+    font-size: 1em;
+}
+
+
 
 
 /* TOGGLE MENU */
