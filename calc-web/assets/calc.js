@@ -60,11 +60,15 @@ function performCalculation() {
  
     let result = 0;
     if (calculator.operator === "+") {
-        result = parseInt(calculator.firstNumber) + parseInt(calculator.displayNumber);
-    } else {
+        result = parseInt(calculator.firstNumber) + parseInt(calculator.displayNumber)
+    } else if (calculator.operator === "-") {
         result = parseInt(calculator.firstNumber) - parseInt(calculator.displayNumber)
+    } else if (calculator.operator === "*") {
+        result = parseInt(calculator.firstNumber) * parseInt(calculator.displayNumber)
+    } else if (calculator.operator === "/") {
+        result = parseInt(calculator.firstNumber) / parseInt(calculator.displayNumber)
     }
- 
+
     calculator.displayNumber = result;
 }
 
@@ -90,6 +94,11 @@ for (let button of buttons)
     if (target.classList.contains('equals')) {
         performCalculation();
         updateDisplay();
+        return;
+    }
+
+    if (target.classList.contains('operator')) {
+        handleOperator(target.innerText);
         return;
     }
 

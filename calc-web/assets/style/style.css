@@ -38,7 +38,11 @@ body {
 }
 
 .double {
-    flex-basis: 50%;
+    flex-basis: 97%;
+}
+
+.align {
+    flex-basis: 61%;
 }
 
 .display {
