@@ -32,12 +32,12 @@ function showHistory() {
 }
 
 function renderHistory() {
-    const hisotryData = showHistory();
+    const historyData = showHistory();
     let hisotryData = document.querySelector("#historyList");
 
-    historyList.innerHTML - "";
+    historyList.innerHTML = "";
 
-    for (let history of hisotryData) {
+    for (let history of historyData) {
         let row = document.createElement('tr');
         row.innerHTML = "<td>" + history.firstNumber + "</td>";
         row.innerHTML += "<td>" + history.operator + "</td>";
